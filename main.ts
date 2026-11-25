@@ -6,9 +6,9 @@ import { join } from 'node:path';
 
 const OUT = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
-// The submitted line, kept here as the entry's single source of truth. Plain commit-subject
-// syntax, and the irony sits in the two clauses: a fix that traded one bug for everyone else's.
-const LINE = 'Fixed the timeout by removing the retry. Incident count down. Support queue up.';
+// The submitted line, kept here as the entry's single source of truth. Real subject syntax, and
+// the irony is a count that moved the right way while the thing it measured did not.
+const LINE = 'Fixed the crash by fixing the crash report.';
 
 // The gate refuses text outside 1 to 100 characters, or one that is only white space, so an
 // overlong line stops here rather than being handed in invalid.
